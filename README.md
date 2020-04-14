@@ -24,11 +24,11 @@ This guide will provide most of the information one needs to stand up a working 
   
 - [Part 3: Serviceability ](#serviceability)
   - [System Health Check](#sys-health)
-	- [Core OS](#coreOS-health)
-	- [RHEL Operating System](#rhel-health)
+    - [Core OS](#coreOS-health)
+    - [RHEL Operating System](#rhel-health)
   - [Diagnostics Collection](#diagnostics)
-		- [Operating System Diagnostics](#os-diag)
-		-  [CPD Diagnostics](#cpd-diag)
+    - [Operating System Diagnostics](#os-diag)
+    - [CPD Diagnostics](#cpd-diag)
 		
 - [Part 4: Day 2 activities ](#day-two)
   - [Monitoring](#monitoring)
