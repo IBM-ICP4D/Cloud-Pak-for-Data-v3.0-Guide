@@ -1,0 +1,14 @@
+install-config.yaml
+apiVersion: v1
+baseDomain: cpd.xyz
+metadata:
+  name: ocp4-cluster
+platform:
+  vSphere:
+    vcenter: <host(eg 192.168.176.137)>
+    username: administrator@vsphere.local
+    password: <passwd>
+    datacenter: <Datacenter(Datacenter)>
+    defaultDatastore: <datastore(datastore3)>
+pullSecret: '<pullscreset>'
+sshKey: <public key generated priviously>
