@@ -86,8 +86,15 @@ For this install, we had access to windows server and hence ended up configuring
 | _etcd-server-ssl._tcp.ocp4-cluster.cpd.xyz |  SRV record point to etcd-1.ocp4-cluster.cpd.xyz with  priority 0, weight 10 and port 2380 |
 | _etcd-server-ssl._tcp.ocp4-cluster.cpd.xyz |  SRV record point to etcd-2.ocp4-cluster.cpd.xyz with  priority 0, weight 10 and port 2380 |
 
+Once all the changes are completed, flush the dns cache
 
-Once all these records are setup, please validate that you are able to do reverse lookup as well. From bastion run a forward and reverse lookup to ensure that these are setup properly and you are able to reach the DNS. 
+```
+ipconfig /flushdns
+ipconfig /registerdns
+
+```
+
+Please validate the changes from bastion by running a forward and reverse lookup to ensure that these are setup properly and you are able to reach the DNS with proper resolution
 
 `nslookup control-plane-2.ocp4-cluster.cpd.xyz` should return 192.168.176.103
 `nslookup 192.168.176.103` should return control-plane-2.ocp4-cluster.cpd.xyz
