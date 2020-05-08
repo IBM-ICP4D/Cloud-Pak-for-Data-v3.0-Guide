@@ -13,12 +13,12 @@ The current assumption is that vSphere is already installed and is ready for ins
 
 A Datacenter in vCenter should be able to provision below machines - 
 
-| Node (hostnames)         | vCPU   |  RAM   |  Quantity 
-| ------------- |-------------| ------------- |-------------|
-| Bastion (lb) | 2 | 4 | 1  |
-| Masters (control-plane-[0-2])  | 8 | 16 | 3 |
-| Workers (compute-[0-1]) | 16 | 64 | 2 | 
-| Bootstrap (bootstrap) | 8 | 16 | 1 | 
+| Node (hostnames)         | vCPU   |  RAM   |  Disk |  Quantity 
+| ------------- |-------------| ------------- |-------------|-------------|
+| Bastion (lb) | 2 | 4 | 200 GB | 1  |
+| Masters (control-plane-[0-2])  | 8 | 32 | 200 GB | 3 |
+| Workers (compute-[0-1]) | 16 | 64 |200 GB | 2 | 
+| Bootstrap (bootstrap) | 4 | 16 | 120 GB | 1 | 
    
 Note that these specifications are bigger than Redhat's recommendation keeping in mind that the cluster would be used to install Cloud pak for data.
 
