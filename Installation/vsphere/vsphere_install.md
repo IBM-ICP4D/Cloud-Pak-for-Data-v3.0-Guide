@@ -39,7 +39,8 @@ Note that these specifications are bigger than Redhat's recommendation keeping i
     - OCP openshift-installer
     - RHCOS OVA image
     - oc client
-   
+  
+  Internet connectivity from all the nodes
    
 # Node Roles 
 
